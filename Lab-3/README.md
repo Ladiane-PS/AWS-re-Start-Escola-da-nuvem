@@ -173,9 +173,7 @@ Este laboratório tem como objetivo apresentar o serviço **AWS Identity and Acc
 - Feche a janela privada.
 
 
----
 
-> Com isso, foi validado que cada usuário recebeu as permissões corretas conforme seu papel no ambiente da AWS. O princípio do menor privilégio foi respeitado em todas as configurações.
 
 ## ✅ Resumo da Tarefa 4
 
