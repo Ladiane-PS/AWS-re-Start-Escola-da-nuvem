@@ -1,11 +1,21 @@
-from datetime import date
+# Atividade 3
 
-def idade_em_dias_completa(ano, mes, dia):
-    nascimento = date(ano, mes, dia)
-    hoje = date.today()
-    diferenca = hoje - nascimento
-    return diferenca.days
+# Crie uma função que calcule a idade de uma pessoa em dias, baseada no ano de nascimento.
 
-# Exemplo de uso:
-dias = idade_em_dias_completa(2000, 2, 29)  # exemplo com ano bissexto
-print(f"Idade exata em dias: {dias} dias")
+
+import datetime
+
+def idade_em_dias(ano_nascimento, mes_nascimento=1, dia_nascimento=1):
+    # Data de nascimento
+    data_nasc = datetime.date(ano_nascimento, mes_nascimento, dia_nascimento)
+    # Data atual
+    hoje = datetime.date.today()
+    # Diferença em dias entre hoje e nascimento
+    idade_dias = (hoje - data_nasc).days
+    return idade_dias
+
+# Exemplo: nasceu em 15/04/2000
+resultado = idade_em_dias(2000, 4, 15)
+
+print(f"Idade em dias: {resultado}")
+
